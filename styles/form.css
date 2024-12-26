@@ -18,3 +18,14 @@ legend {
         height: 2.4rem;
     }
 }
+
+.input-wrapper:focus-within,
+.textarea-wrapper:focus-within {
+
+    input,
+    textarea,
+    .radio-wrapper {
+        border-color: var(--brand-light);
+        outline: none;
+    }
+}

@@ -6,6 +6,7 @@
     padding: 4px;
     gap: 4px;
 
+    border: 2px solid transparent;
     outline: 1px solid var(--input-stroke);
     border-radius: .8rem;
 
@@ -33,7 +34,7 @@
         width: 100%;
 
         margin: 0;
-        padding: .7rem 1.8rem;
+        padding: .88rem 1.8rem;
         border-radius: .8rem;
 
         font: var(--body-sm-regular);

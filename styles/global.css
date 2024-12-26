@@ -23,7 +23,7 @@
     --body-xs-regular: 400 1.2rem var(--open-sans-family);
     --body-xs-semibold: 600 1.2rem var(--open-sans-family);
 
-    --brand-ligh: #59B2FF;
+    --brand-light: #59B2FF;
     --brand-mid: #3487CF;
     --brand-dark: #1D6FB6;
 
@@ -53,10 +53,7 @@
 
 body {
     font-size: 1.6rem;
-    background-color: tomato;
-    color: white;
-
-    font: var(--body-xs-regular);
+    font: var(--body-md-regular);
 
     overflow: hidden;
 }
@@ -64,4 +61,10 @@ body {
 img {
     max-width: 100%;
     height: 100%;
+}
+
+.grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27.2rem, 1fr));
+    gap: 1.6rem;
 }

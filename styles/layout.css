@@ -1,12 +1,12 @@
 #app {
     display: grid;
-    grid-template-columns: 31.25% 68.75%;
+    grid-template-columns: 31.25% 1fr;
+    gap: 2rem;
 
-    /* background-color: var(--shape-background); */
+    background-color: var(--shape-background);
     padding: 2rem;
 
     height: 100vh;
-    overflow: hidden;
 }
 
 aside {
@@ -32,5 +32,22 @@ aside {
         font-weight: 300;
         color: var(--text-heading);
     }
+}
 
+main {
+    overflow: auto;
+    border-radius: 1.2rem;
+
+    padding: 8rem 13rem;
+    background-color: var(--shape-body);
+
+    .main-container {
+        max-width: 56rem;
+    }
+
+    h1 {
+        font: var(--heading-md);
+        margin-bottom: 4rem;
+        color: var(--text-heading);
+    }
 }

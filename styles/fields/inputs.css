@@ -1,0 +1,32 @@
+input,
+select,
+textarea {
+    appearance: none;
+
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    margin-bottom: 1.6rem;
+
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+
+    border-radius: .8rem;
+    border: 1px solid transparent;
+    outline: 1px solid var(--input-stroke);
+}
+
+label {
+    font: var(--body-sm-regular);
+    color: var(--text-body);
+
+    display: block;
+    margin-bottom: 1.2rem;
+}
+
+input[type="datetime-local"] {
+    position: relative;
+
+    &&::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+}

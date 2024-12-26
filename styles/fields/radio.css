@@ -50,3 +50,75 @@
         }
     }
 }
+
+.customization .radio-wrapper {
+    all: unset;
+    display: flex;
+    gap: 1.2rem;
+
+    input {
+        border-radius: 50%;
+    }
+}
+
+.customization .radio-inner {
+    height: 4rem;
+    width: 4rem;
+
+    border-radius: 50%;
+    border: 4px solid var(--shape-button);
+    outline: 2px solid var(--shape-button);
+
+    &:hover {
+        border-color: var(--shape-hover);
+        outline-color: var(--shape-hover);
+    }
+
+    &:has(:checked) {
+        outline-color: var(--brand-light);
+    }
+}
+
+#brand-light {
+    background-color: var(--brand-light);
+}
+
+#navy {
+    background-color: var(--navy);
+}
+
+#purple {
+    background-color: var(--purple);
+}
+
+#fuschia {
+    background-color: var(--fuschia);
+}
+
+#pink {
+    background-color: var(--pink);
+}
+
+#danger {
+    background-color: var(--danger);
+}
+
+#orange {
+    background-color: var(--orange);
+}
+
+#yellow {
+    background-color: var(--yellow);
+}
+
+#lime {
+    background-color: var(--lime);
+}
+
+#green {
+    background-color: var(--green);
+}
+
+#cyan {
+    background-color: var(--cyan);
+}

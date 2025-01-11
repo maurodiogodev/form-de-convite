@@ -79,46 +79,100 @@
     }
 }
 
-#brand-light {
-    background-color: var(--brand-light);
+div {
+
+    #brand-light {
+        background-color: var(--brand-light);
+    }
+
+    #navy {
+        background-color: var(--navy);
+    }
+
+    #purple {
+        background-color: var(--purple);
+    }
+
+    #fuschia {
+        background-color: var(--fuschia);
+    }
+
+    #pink {
+        background-color: var(--pink);
+    }
+
+    #danger {
+        background-color: var(--danger);
+    }
+
+    #orange {
+        background-color: var(--orange);
+    }
+
+    #yellow {
+        background-color: var(--yellow);
+    }
+
+    #lime {
+        background-color: var(--lime);
+    }
+
+    #green {
+        background-color: var(--green);
+    }
+
+    #cyan {
+        background-color: var(--cyan);
+    }
 }
 
-#navy {
-    background-color: var(--navy);
+.theme-input-wrapper {
+    margin-top: 2.8rem;
 }
 
-#purple {
-    background-color: var(--purple);
-}
+.theme-radio-wrapper.grid-auto-fit {
+    grid-template-columns: repeat(4, 1fr);
 
-#fuschia {
-    background-color: var(--fuschia);
-}
+    &>label {
+        margin-bottom: 1.6rem;
+        font: var(--body-sm-regular);
+        color: var(--text-heading);
+    }
 
-#pink {
-    background-color: var(--pink);
-}
+    .theme-inner-radio {
+        position: relative;
+        padding: .4rem;
+        height: 10.4rem;
 
-#danger {
-    background-color: var(--danger);
-}
+        outline: 2px solid transparent;
+        border-radius: .8rem;
 
-#orange {
-    background-color: var(--orange);
-}
+        display: grid;
+        justify-items: center;
+        gap: .8rem;
 
-#yellow {
-    background-color: var(--yellow);
-}
+        background-color: var(--shape-button);
 
-#lime {
-    background-color: var(--lime);
-}
+        input[type="radio"] {
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
 
-#green {
-    background-color: var(--green);
-}
+        img {
+            width: 100%;
+            max-height: 6.4rem;
+            border-radius: 4px;
+        }
 
-#cyan {
-    background-color: var(--cyan);
+        &:hover {
+            background-color: var(--shape-hover);
+        }
+
+        &:focus-within,
+        &:has(:checked) {
+            outline-color: var(--brand-light);
+        }
+    }
+
 }

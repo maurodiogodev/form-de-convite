@@ -1,0 +1,38 @@
+.agreements .checkbox-wrapper {
+    display: flex;
+    gap: 1.2rem;
+    align-items: flex-start;
+
+    position: relative;
+
+    input {
+        all: unset;
+
+        position: absolute;
+        inset: 0;
+    }
+
+    .checkbox-image {
+        background: url(../../assets/icons/checkbox-default.svg) no-repeat;
+
+        flex: 0 0 2.4rem;
+        height: 2.4rem;
+    }
+
+    &:focus-within {
+        .checkbox-image {
+            background: url(../../assets/icons/checkbox-hover.svg) no-repeat;
+        }
+    }
+
+    &:has(:checked) {
+        .checkbox-image {
+            background: url(../../assets/icons/checkbox-checked.svg) no-repeat;
+        }
+    }
+
+    strong {
+        font: var(--body-sm-semibold);
+        color: var(--brand-light);
+    }
+}

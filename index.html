@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
@@ -164,6 +166,8 @@
                             </div>
                         </div>
 
+                        <!--
+                       
                         <div class="theme-input-wrapper">
                             <label>Tema do evento</label>
 
@@ -244,6 +248,44 @@
 
                             </div>
 
+                        </div>
+                    -->
+
+                        <div class="style-cover">
+                            <div class="invitation-style">
+                                <label>Estilo</label>
+                                <div class="switch-wrapper">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    <label class="dark-mode">Escuro</label>
+                                    <label class="light-mode">Claro</label>
+                                </div>
+                            </div>
+
+                            <div class="invitation-cover">
+                                <label for="cover">Foto de capa</label>
+                                <div class="dropzone">
+
+                                    <input type="file" name="cover" id="cover" required onchange="showFileName()">
+
+                                    <div class="drop-button">
+                                        <img src="./assets/icons/upload.svg" alt="um ícone de upload">
+                                        <p>Selecionar</p>
+                                    </div>
+
+                                    <p id="fileName">
+                                        Nenhum arquivo selecionado
+                                    </p>
+                                </div>
+
+                                <p id="errorMessage">
+                                    <img src="./assets/icons/error-alerte.svg" alt="ícone de alerta de erro">
+                                    Error message
+                                </p>
+
+                            </div>
                         </div>
                     </fieldset>
 

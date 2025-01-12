@@ -1,0 +1,35 @@
+@import url(./switch.css);
+
+.style-cover {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.dropzone {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    color: var(--input-placeholder);
+
+    position: relative;
+
+    .drop-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .8rem;
+
+        padding: 1.05rem 1.2rem;
+        border-radius: .8rem;
+        background-color: var(--shape-button);
+
+        color: var(--text-heading);
+    }
+
+    input {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+    }
+}

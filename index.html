@@ -34,8 +34,6 @@
 
                 <form>
 
-                    <!--
-
                     <fieldset class="about-event">
                         <legend>
                             <img src="./assets/icons/calendar.svg" alt="ícone de calendário">
@@ -107,10 +105,10 @@
                                 placeholder="Escreva sobre os detalhes do evento"></textarea>
                         </div>
                     </fieldset>
-                -->
 
 
                     <fieldset class="customization">
+
                         <legend>
                             <img src="./assets/icons/paintbrush-vertical.svg" alt="ícone de pincel">
                             Personalização
@@ -166,8 +164,8 @@
                             </div>
                         </div>
 
-                        <!--
-                       
+
+
                         <div class="theme-input-wrapper">
                             <label>Tema do evento</label>
 
@@ -249,7 +247,6 @@
                             </div>
 
                         </div>
-                    -->
 
                         <div class="style-cover">
                             <div class="invitation-style">
@@ -268,7 +265,7 @@
                                 <label for="cover">Foto de capa</label>
                                 <div class="dropzone">
 
-                                    <input type="file" name="cover" id="cover" required onchange="showFileName()">
+                                    <input type="file" name="cover" id="cover" onchange="showFileName()">
 
                                     <div class="drop-button">
                                         <img src="./assets/icons/upload.svg" alt="um ícone de upload">
@@ -289,6 +286,67 @@
                         </div>
                     </fieldset>
 
+                    <fieldset class="contact-info">
+                        <legend>
+                            <img src="./assets/icons/contact.svg" alt="ícone de contato">
+                            Dados para contato
+                        </legend>
+
+                        <div class="input-wrapper">
+                            <div class="inner-input">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" placeholder="Nome completo">
+                            </div>
+
+                            <p id="errorMessage">
+                                <img src="./assets/icons/error-alerte.svg" alt="ícone de alerta de erro">
+                                Error message
+                            </p>
+                        </div>
+
+                        <div class="grid-auto-fit">
+                            <div class="input-wrapper">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" name="phone" id="phone" placeholder="(99) 99999-9999">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset></fieldset>
+                    <hr>
+
+                    <div class="agreements">
+
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms" id="terms">
+                            <label for="terms">Li e concordo com os <strong>Termos e Condições</strong> e com a
+                                <strong>Política de Privacidade</strong></label>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="mailing" id="mailing">
+                            <label for="mailing">Aceito receber atualizações e promoções por e-mail</label>
+                        </div>
+
+                        <div class="checkbox-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="texting" id="texting">
+                            <label for="texting">Aceito receber atualizações e promoções por SMS</label>
+                        </div>
+                    </div>
+
+                    <div class="actions-wrapper">
+                        <button class="btn-primary" type="submit">
+                            <img src="./assets/icons/ticket.svg" alt="ícone de ticket">
+                            Gerar convite
+                        </button>
+                    </div>
                 </form>
             </div>
         </main>
